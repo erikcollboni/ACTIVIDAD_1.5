@@ -63,7 +63,7 @@ class Node(Thread):
         self.client.start()
 
         self.wakeupcounter = 0
-        while self.wakeupcounter <= 2: # criterio de parada: 3 peticiones por nodo
+        while self.wakeupcounter < 1: # criterio de parada: 3 peticiones por nodo
             # Nodes with different starting times
             time.sleep(random.randint(2, 5))
             print(f"Node_{self.id} attempting access (Attempt {self.wakeupcounter})")

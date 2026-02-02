@@ -64,6 +64,6 @@ port = 5000
 
 **2. Ejecución**
 Para iniciar la simulación hay que ejecutar el programa principal:
-``bash
+```bash
 python main.py
 ```
